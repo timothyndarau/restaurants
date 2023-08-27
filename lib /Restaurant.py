@@ -1,14 +1,10 @@
 class Restaurant:
 
-    def __init__(self, name ) :
-        self.name = name 
-
-
     _all_restaurants = []
 
-    def __init__(self, name):
-        self._name = name
-        self._reviews = []
+    def __init__(self, name ) :
+        self.name = name 
+        #self._reviews = []
         Restaurant._all_restaurants.append(self)
 
     def name(self):

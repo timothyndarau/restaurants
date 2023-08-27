@@ -1,9 +1,27 @@
 class Customer:
-    def __init__(self, given_name, family_name, full_name, all  ) :
+    
+    _all_customers = []
 
-        self.gn = given_name
-        self.famna =family_name
-        self.fn = full_name
-        self.all = all
-        
-        
+    def __init__(self, given_name, family_name):
+        self._given_name = given_name
+        self._family_name = family_name
+        self._reviews = []
+        Customer._all_customers.append(self)
+
+    def given_name(self):
+        return self._given_name
+
+    def family_name(self):
+        return self._family_name
+
+    def full_name(self):
+        return f"{self._given_name} {self._family_name}"
+
+    @classmethod
+    def all(cls):
+        return cls._all_customers
+
+    def add_review(self, restaurant, rating):
+        review = review (self, restaurant, rating)
+        self._reviews.append(review)
+        restaurant.add_review(review)
