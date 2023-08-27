@@ -4,12 +4,12 @@ from Restaurant import Restaurant
 
 def main():
     # Creating customers
-    customer1 = Customer("John", "Doe")
-    customer2 = Customer("Jane", "Smith")
+    customer1 = Customer("Stevie", "Wanda")
+    customer2 = Customer("Lisa ", "Monroe")
 
     # Creating restaurants
-    restaurant1 = Restaurant("Restaurant A")
-    restaurant2 = Restaurant("Restaurant B")
+    restaurant1 = Restaurant("Chick fill ' A")
+    restaurant2 = Restaurant("Smokin Beef")
 
     # Adding reviews
     customer1.add_review(restaurant1, 4)
@@ -38,7 +38,7 @@ def main():
 
     print("\nAverage rating for Restaurant A:", restaurant1.average_star_rating())
 
-    print("\nNumber of reviews by John Doe:", customer1.num_reviews())
+    print("\nNumber of reviews by Stevie Wanda:", customer1.num_reviews())
 
     found_customer = Customer.find_by_name("John Doe")
     if found_customer:
