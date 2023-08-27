@@ -12,9 +12,9 @@ def main():
     restaurant2 = Restaurant("Smokin Beef")
 
     # Adding reviews
-    customer1.add_review(restaurant1, 4)
-    customer1.add_review(restaurant2, 5)
-    customer2.add_review(restaurant1, 3)
+    customer1.add_review(restaurant1, 9.0)
+    customer1.add_review(restaurant2, 9.5)
+    customer2.add_review(restaurant1, 8.5)
 
 
     # Testing methods
