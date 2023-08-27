@@ -6,7 +6,7 @@ def main():
     # Creating customers
     customer1 = Customer("Stevie", "Wanda")
     customer2 = Customer("Lisa ", "Monroe")
-    customer2 = Customer("Master ", "Rizzer")
+    customer3 = Customer("Master ", "Rizzer")
 
 
     # Creating restaurants
@@ -17,6 +17,7 @@ def main():
     customer1.add_review(restaurant1, 9.0)
     customer1.add_review(restaurant2, 9.5)
     customer2.add_review(restaurant1, 8.5)
+    customer3.add_review(restaurant2,10.0) 
 
   # Testing methods
     print("Customers:")
@@ -24,7 +25,7 @@ def main():
         print(customer.full_name())
 
     print("\nRestaurants:")
-    for restaurant in Restaurant.all_restaurants:  # Use all_restaurants instead of all()
+    for restaurant in Restaurant.all_restaurants:  
         print(restaurant.name())
 
 
@@ -32,9 +33,20 @@ def main():
     for review in restaurant1.reviews():
         print(f"Customer: {review.customer().full_name()}, Rating: {review.rating()}")
 
+
+    print("\nReviews for Smokin Beef :")
+    for review in restaurant1.reviews():
+        print(f"Customer: {review.customer().full_name()}, Rating: {review.rating()}")    
+
+
+
     print("\nCustomers who reviewed Chick fill ' A:")
     for customer in restaurant1.customers():
         print(customer.full_name())
+
+    print("\nCustomers who reviewed Smokin Beef :")
+    for customer in restaurant1.customers():
+        print(customer.full_name())    
 
     print("\nAverage rating for Chick fill ' A:", restaurant1.average_star_rating())
 
