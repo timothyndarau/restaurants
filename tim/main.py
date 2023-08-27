@@ -28,27 +28,27 @@ def main():
         print(restaurant.name())
 
 
-    print("\nReviews for Restaurant A:")
+    print("\nReviews for Chick fill ' A:")
     for review in restaurant1.reviews():
         print(f"Customer: {review.customer().full_name()}, Rating: {review.rating()}")
 
-    print("\nCustomers who reviewed Restaurant A:")
+    print("\nCustomers who reviewed Chick fill ' A:")
     for customer in restaurant1.customers():
         print(customer.full_name())
 
-    print("\nAverage rating for Restaurant A:", restaurant1.average_star_rating())
+    print("\nAverage rating for Chick fill ' A:", restaurant1.average_star_rating())
 
     print("\nNumber of reviews by Stevie Wanda:", customer1.num_reviews())
 
-    found_customer = Customer.find_by_name("John Doe")
+    found_customer = Customer.find_by_name("Stevie Wanda")
     if found_customer:
         print("\nFound customer by name:", found_customer.full_name())
     else:
         print("\nNo customer found by name.")
 
-    customers_with_given_name = Customer.find_all_by_given_name("Jane")
+    customers_with_given_name = Customer.find_all_by_given_name("lizzie")
     if customers_with_given_name:
-        print("\nCustomers with given name 'Jane':")
+        print("\nCustomers with given name 'lizzie':")
         for customer in customers_with_given_name:
             print(customer.full_name())
     else:
