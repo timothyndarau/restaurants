@@ -49,8 +49,11 @@ def main():
         print(customer.full_name())    
 
     print("\nAverage rating for Chick fill ' A:", restaurant1.average_star_rating())
+    print("\nAverage rating for Smokin Beef :", restaurant1.average_star_rating())
 
     print("\nNumber of reviews by Stevie Wanda:", customer1.num_reviews())
+    print("\nNumber of reviews by Lisa Monroe:", customer1.num_reviews())
+
 
     found_customer = Customer.find_by_name("Stevie Wanda")
     if found_customer:
