@@ -6,6 +6,8 @@ def main():
     # Creating customers
     customer1 = Customer("Stevie", "Wanda")
     customer2 = Customer("Lisa ", "Monroe")
+    customer2 = Customer("Master ", "Rizzer")
+
 
     # Creating restaurants
     restaurant1 = Restaurant("Chick fill ' A")
@@ -16,8 +18,6 @@ def main():
     customer1.add_review(restaurant2, 9.5)
     customer2.add_review(restaurant1, 8.5)
 
-
-    # Testing methods
   # Testing methods
     print("Customers:")
     for customer in Customer.all():
