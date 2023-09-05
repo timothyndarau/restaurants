@@ -34,6 +34,7 @@ def main():
         print(f"Customer: {review.customer().full_name()}, Rating: {review.rating()}")
 
 
+
     print("\nReviews for Smokin Beef :")
     for review in restaurant1.reviews():
         print(f"Customer: {review.customer().full_name()}, Rating: {review.rating()}")    
